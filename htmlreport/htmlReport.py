@@ -1,6 +1,6 @@
 # HTMLTestRunner.py文件放在\Python\Lib\ 目录下
 # 需在命令行执行才能生成测试报告文档，unittest执行无效果。
-# E:\Python_Test\aTest\HTMLreport>python htmlReport.py
+# E:\Python_Test\aTest\htmlreport>python htmlReport.py
 
 print('------开始生成HTML测试报告------')
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     # now = time.strftime("%Y-%m-%d %H:%M:%S")  ## 时间打印格式是正确的，但是文件名不能使用冒号
     # now = time.strftime("%Y-%m-%d %H-%M-%S")
     # 定义生成的HTML报告文档名称及存放路径
-    filepath = 'E:\\Python_Test\\aTest\\HTMLreport\\testReport.html'
+    filepath = 'E:\\Python_Test\\aTest\\htmlreport\\testReport.html'
     fp = open(filepath, 'wb')
     # 定义报告的属性值
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title='HTML测试报告',description='用例执行结果')
