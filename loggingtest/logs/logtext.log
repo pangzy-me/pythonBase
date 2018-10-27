@@ -1,0 +1,8 @@
+2018-10-26 16:49:01,224-__main__-CRITICAL-第1优先级错误-critical信息.
+2018-10-26 16:49:02,226-__main__-ERROR-第2优先级错误-error信息
+2018-10-26 16:49:03,231-__main__-WARNING-第3优先级错误-warning信息
+2018-10-26 16:49:03,245-__main__-ERROR-fail to open try_file.txt
+Traceback (most recent call last):
+  File "E:/Python_Test/aTest/loggingtest/log_module.py", line 127, in <module>
+    open("try_open_file.txt","rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'try_open_file.txt'

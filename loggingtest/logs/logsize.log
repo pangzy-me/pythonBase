@@ -1,0 +1,5 @@
+2018-10-26 16:49:03,245-__main__-ERROR-fail to open try_file.txt
+Traceback (most recent call last):
+  File "E:/Python_Test/aTest/loggingtest/log_module.py", line 127, in <module>
+    open("try_open_file.txt","rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'try_open_file.txt'
