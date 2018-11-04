@@ -1,10 +1,8 @@
-# -*-coding:bgk-*-
-
 # 参考文档 https://www.cnblogs.com/chengd/articles/7291563.html
 # 列模式记录：
 #   a.在当前文件右键->Column Selection Mode->用鼠标垂直选择文本
 #   b.快捷键：Alt + Shift + Insert
-print('---socket通信---')
+# print('---socket通信---')
 '''
 1.Socket又称"套接字"，应用程序通常通过"套接字"向网络发出请求或者应答网络请求，使主机间或者一台计算机上的进程间可以通讯。
 2.流程记录：
@@ -29,4 +27,4 @@ PORT = 8888
 BUFSIZE = 1024
 ADDR=(HOST,PORT)
 
-tcpSerSock = socket(AF_INET)
+# tcpSerSock = socket(socket.AF_INET,)
