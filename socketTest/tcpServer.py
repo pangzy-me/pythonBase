@@ -1,3 +1,5 @@
+# -*-coding:bgk-*-
+
 # 参考文档 https://www.cnblogs.com/chengd/articles/7291563.html
 # 列模式记录：
 #   a.在当前文件右键->Column Selection Mode->用鼠标垂直选择文本
@@ -21,5 +23,10 @@ print('---socket通信---')
     12 服务器端关闭
 
 '''
+from socket import *
+HOST = '0.0.0.0'
+PORT = 8888
+BUFSIZE = 1024
+ADDR=(HOST,PORT)
 
-
+tcpSerSock = socket(AF_INET)
