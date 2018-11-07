@@ -1,3 +1,5 @@
+# coding=utf-8
+
 # 参考文档 https://www.cnblogs.com/chengd/articles/7291563.html
 # 列模式记录：
 #   a.在当前文件右键->Column Selection Mode->用鼠标垂直选择文本
@@ -21,10 +23,29 @@
     12 服务器端关闭
 
 '''
+# netstat -an|find /i "8888"    命令行窗口运行查看
+
 from socket import *
 HOST = '0.0.0.0'
-PORT = 8888
+PORT = 55555
 BUFSIZE = 1024
-ADDR=(HOST,PORT)
+ADDR=(HOST, PORT)
 
-# tcpSerSock = socket(socket.AF_INET,)
+tcpSerSock = socket(AF_INET,SOCK_STREAM)
+tcpSerSock.bind(ADDR)
+tcpSerSock.listen(2)
+print('等待客户端连接...')
+
+tcpCliSock,addr = tcpSerSock.accept()
+print('连接来自客户端：',addr)
+
+while True:
+    data = tcpCliSock.recv(BUFSIZE)
+    if not data:
+        tcpCliSock.close()
+        break
+    rstr = data.decode()
+    print(rstr)
+    tcpCliSock.sendall(f'***{rstr}'.encode())
+
+tcpSerSock.close()
