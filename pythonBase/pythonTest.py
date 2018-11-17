@@ -222,9 +222,10 @@ format:
 # print('{:*^10}'.format('jack'))
 
 # format()可以使用变量传入
-# str='hello,world.'
-# len=20
-# print('{str:*^{len}}'.format(str=str,len=len))
+# str = 'hello,world.'
+# tc = '*'
+# len = 20
+# print('{str:{tc}^{len}}'.format(str=str, tc=tc, len=len))
 
 '''
 格式化简单使用 f
