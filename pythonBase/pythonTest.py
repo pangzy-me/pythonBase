@@ -220,6 +220,12 @@ format:
 # print('{:<10}'.format('hello'))  # < 小于号，尖尖左对齐
 # print('{:^10}'.format('hell'))    # 中间对齐
 # print('{:*^10}'.format('jack'))
+
+# format()可以使用变量传入
+# str='hello,world.'
+# len=20
+# print('{str:*^{len}}'.format(str=str,len=len))
+
 '''
 格式化简单使用 f
 '''
