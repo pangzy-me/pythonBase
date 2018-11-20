@@ -94,6 +94,14 @@
 #     print('不合格。。。')
 # print('that is all.')
 '''
+
+>>> a
+11
+>>> isinstance(a,int)
+True
+>>> isinstance(a,(int,float))
+True
+
 函数
 1.先定义后调用
 
