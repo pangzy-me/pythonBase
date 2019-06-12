@@ -60,6 +60,8 @@
 # rc = reduce(lambda x,y: x+y, listc, 'aaa')
 # print(rc)
 
+## def f(x, y):
+##     return x + y
 ## reduce()还可以接收第3个可选参数，作为计算的初始值。如果把初始值设为100，计算：
 ## reduce(f, [1, 3, 5, 7, 9], 100)
 ## 结果将变为125，因为第一轮计算是：
