@@ -628,14 +628,14 @@ class SouthTiger(Tiger,NiuTiger): ## 括号内就是继承的父类
 6. 自定义异常，要继承父类Exception  ##待验证
 7. Python标准异常总结
       AssertionError	        断言语句（assert）失败
-      AttributeError	        尝试访问未知的对象属性
-      EOFError		            用户输入文件末尾标志EOF（Ctrl+d）
-      FloatingPointError	    浮点计算错误
-      GeneratorExit	          generator.close()方法被调用的时候
-      ImportError		          导入模块失败的时候
-      IndexError		          索引超出序列的范围
-      KeyError		            字典中查找一个不存在的关键字
-      KeyboardInterrupt	      用户输入中断键（Ctrl+c）
+      AttributeErrorr	        尝试访问未知的对象属性
+      EOFErrorr	        用户输入文件末尾标志EOF（Ctrl+d）
+      FloatingPointErrorr	        浮点计算错误
+      GeneratorExitr	        generator.close()方法被调用的时候
+      ImportErrorr	        导入模块失败的时候
+      IndexErrorr	        索引超出序列的范围
+      KeyErrorr	        字典中查找一个不存在的关键字
+      KeyboardInterruptr	        用户输入中断键（Ctrl+c）
       MemoryError		          内存溢出（可通过删除对象释放内存）
       NameError		            尝试访问一个不存在的变量
       NotImplementedError	    尚未实现的方法
